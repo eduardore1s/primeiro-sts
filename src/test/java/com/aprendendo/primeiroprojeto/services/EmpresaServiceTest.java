@@ -17,8 +17,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.aprendendo.primeiroprojeto.entities.Empresa;
 import com.aprendendo.primeiroprojeto.repositories.EmpresaRepository;
+import com.aprendendo.primeiroprojeto.services.EmpresaService;
 import com.aprendendo.primeiroprojeto.services.impl.EmpresaServiceImpl;
-import com.aprendndo.primeiroprojeto.services.EmpresaService;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -35,7 +35,7 @@ public class EmpresaServiceTest {
 
 	@Before
 	public void setUp() throws Exception {
-		BDDMockito.given(this.empresaRepository.FindByCnpj(Mockito.anyString())).willReturn(new Empresa());
+		BDDMockito.given(this.empresaRepository.findByCnpj(Mockito.anyString())).willReturn(new Empresa());
 		BDDMockito.given(this.empresaRepository.save(Mockito.any(Empresa.class))).willReturn(new Empresa());
 	}
 

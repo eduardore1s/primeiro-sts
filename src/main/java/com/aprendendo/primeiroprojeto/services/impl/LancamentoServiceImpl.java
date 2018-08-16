@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import com.aprendendo.primeiroprojeto.entities.Lancamento;
 import com.aprendendo.primeiroprojeto.repositories.LancamentoRepository;
-import com.aprendndo.primeiroprojeto.services.LancamentoService;
+import com.aprendendo.primeiroprojeto.services.LancamentoService;
 
 
 @Service
@@ -37,19 +37,18 @@ public class LancamentoServiceImpl implements LancamentoService {
 //		
 //	}
 	
-	@CachePut("lancamentoPorId")
-	public Lancamento persistir(Lancamento lancamento) {
-		log.info("Persistindo o lançamento: {}", lancamento);
-		return this.lancamentoRepository.save(lancamento);
-	}
-	
-	public void remover(Long id) {
-		log.info("Removendo o lançamento ID {}", id);
+//	@CachePut("lancamentoPorId")
+//	public Lancamento persistir(Lancamento lancamento) {
+//		log.info("Persistindo o lançamento: {}", lancamento);
+//		return this.lancamentoRepository.save(lancamento);
+//	}
+//	
+//	public void remover(Long id) {
+//		log.info("Removendo o lançamento ID {}", id);
 		
 		//solucao provisoria
 //		this.lancamentoRepository.delete(id);
 		
-	}
 
 }
 

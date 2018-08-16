@@ -1,4 +1,4 @@
-package com.aprendendo.primeiroprojeto.api;
+package com.aprendendo.primeiroprojeto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

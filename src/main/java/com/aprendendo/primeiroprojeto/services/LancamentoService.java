@@ -1,4 +1,4 @@
-package com.aprendndo.primeiroprojeto.services;
+package com.aprendendo.primeiroprojeto.services;
 
 import java.util.Optional;
 
@@ -32,13 +32,13 @@ public interface LancamentoService {
 	 * @param lancamento
 	 * @return Lancamento
 	 */
-	Lancamento persistir(Lancamento lancamento);
+	//Lancamento persistir(Lancamento lancamento);
 	
 	/**
 	 * Remove um lançamento da base de dados.
 	 * 
 	 * @param id
 	 */
-	void remover(Long id);
+	//void remover(Long id);
 	
 }

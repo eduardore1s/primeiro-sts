@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.aprendendo.primeiroprojeto.entities.Empresa;
 import com.aprendendo.primeiroprojeto.repositories.EmpresaRepository;
-import com.aprendndo.primeiroprojeto.services.EmpresaService;
+import com.aprendendo.primeiroprojeto.services.EmpresaService;
 
 @Service
 public class EmpresaServiceImpl implements EmpresaService {
@@ -22,7 +22,7 @@ public class EmpresaServiceImpl implements EmpresaService {
 	@Override
 	public Optional<Empresa> buscarPorCnpj(String cnpj) {
 		log.info("Buscando uma empresa para o CNPJ {}", cnpj);
-		return Optional.ofNullable(empresaRepository.FindByCnpj(cnpj));
+		return Optional.ofNullable(empresaRepository.findByCnpj(cnpj));
 	}
 
 	@Override

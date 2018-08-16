@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.aprendendo.primeiroprojeto.entities.Funcionario;
 import com.aprendendo.primeiroprojeto.repositories.FuncionarioRepository;
-import com.aprendndo.primeiroprojeto.services.FuncionarioService;
+import com.aprendendo.primeiroprojeto.services.FuncionarioService;
 
 
 @Service

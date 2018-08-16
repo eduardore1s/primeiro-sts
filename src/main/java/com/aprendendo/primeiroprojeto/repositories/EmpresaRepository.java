@@ -8,5 +8,5 @@ import com.aprendendo.primeiroprojeto.entities.Empresa;
 public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
 	
 	@Transactional(readOnly = true)
-	Empresa FindByCnpj(String cnpf);
+	Empresa findByCnpj(String cnpj);
 }
