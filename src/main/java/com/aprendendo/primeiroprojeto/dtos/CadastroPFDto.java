@@ -62,7 +62,7 @@ public class CadastroPFDto {
 	}
 
 	//@NotEmpty(message = "CPF não pode ser vazio.")
-	@CPF(message="CPF inválido")
+	//@CPF(message="CPF inválido")
 	public String getCpf() {
 		return cpf;
 	}
@@ -96,7 +96,7 @@ public class CadastroPFDto {
 	}
 
 	//@NotEmpty(message = "CNPJ não pode ser vazio.")
-	@CNPJ(message="CNPJ inválido.")
+	//@CNPJ(message="CNPJ inválido!")
 	public String getCnpj() {
 		return cnpj;
 	}
