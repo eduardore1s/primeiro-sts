@@ -83,7 +83,14 @@ public class CadastroPFController {
 	 */
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<String> buscar() throws NoSuchAlgorithmException {
+		
 		return ResponseEntity.ok("TESTE");
+	}
+	
+	@RequestMapping(method=RequestMethod.PUT)
+	public ResponseEntity<String> buscarTeste() throws NoSuchAlgorithmException {
+		
+		return ResponseEntity.ok("PUT");
 	}
 //	
 //	
